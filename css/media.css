@@ -98,14 +98,14 @@
     margin-bottom: 12px;
 }
 .slider-catalog .slick-slide {
- padding: 0 12px;
+   padding: 0 12px;
 }
 .slider-catalog {
- margin: 0 -12px;
- margin-bottom: 30px;
+   margin: 0 -12px;
+   margin-bottom: 30px;
 }
 .item-catalog__sizes {
- font-size: 12px;
+   font-size: 12px;
 }
 .item-catalog__descr {
     font-size: 12px;
@@ -155,10 +155,10 @@
     margin-bottom: 15px;
 }
 .row_etaps {
- margin: 0 -12px;
+   margin: 0 -12px;
 }
 .row_etaps > div {
- padding: 0 12px;
+   padding: 0 12px;
 }
 .item-etap {
     padding: 23px 27px;
@@ -201,7 +201,7 @@
     margin-bottom: 18px;
 }
 .reviews {
- padding-bottom: 33px;
+   padding-bottom: 33px;
 }
 .subscribe-block {
     padding: 40px 50px;
@@ -529,6 +529,7 @@
     .buttons-mobile {
         height: 65px;
         padding: 0 15px;
+        padding-right: 19px;
         background: #FAFAFA;
         display: flex;
         align-items: center;
@@ -975,11 +976,11 @@
         display: block;
     }
     .menu-dropdown__title {
-    margin-bottom: 10px;
-}
-.menu-dropdown__list {
-    margin-bottom: 10px;
-}
+        margin-bottom: 10px;
+    }
+    .menu-dropdown__list {
+        margin-bottom: 10px;
+    }
 }
 
 /* Small Devices, Tablets */
