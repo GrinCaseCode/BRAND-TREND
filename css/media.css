@@ -970,6 +970,9 @@
     .btn-header_nav.active::after {
         opacity: 1;
     }
+    .billbord-block .descr-big span {
+        display: block;
+    }
 }
 
 /* Small Devices, Tablets */

@@ -23,7 +23,6 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
-
 	//кнопка sandwich
 	$(".sandwich").click(function() {
 		$(this).toggleClass("active");
@@ -36,7 +35,8 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		}
 	});
 
-	$(".btn-header_nav").click(function() {
+	$(".btn-header_nav").click(function(e) {
+		e.preventDefault();
 		$(this).toggleClass("active");
 		if ($(".navigation").is(":hidden")) {
 			$(".navigation").slideDown(200);
