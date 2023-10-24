@@ -981,6 +981,9 @@
     .menu-dropdown__list {
         margin-bottom: 10px;
     }
+    .item-etap p {
+        max-width: 270px;
+    }
 }
 
 /* Small Devices, Tablets */
