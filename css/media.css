@@ -873,6 +873,7 @@
         padding-bottom: 20px;
         width: 100%;
         max-height: 100vh;
+        max-height: calc(100vh - 90px);
         overflow: auto;
         left: 0;
         background-color: #fff;
@@ -973,6 +974,12 @@
     .billbord-block .descr-big span {
         display: block;
     }
+    .menu-dropdown__title {
+    margin-bottom: 10px;
+}
+.menu-dropdown__list {
+    margin-bottom: 10px;
+}
 }
 
 /* Small Devices, Tablets */
