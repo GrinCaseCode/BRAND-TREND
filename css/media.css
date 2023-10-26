@@ -1505,6 +1505,9 @@
     top: 0;
     position: static;
 }
+.page-basket .title-section {
+    margin-top: 0;
+}
 }
 
 /* Small Devices, Tablets */
