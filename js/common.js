@@ -99,6 +99,11 @@ $("*[data-video-id]").modalVideo();
 		$(this).toggleClass("active");
 	});
 
+	$(".mobile-text-card__title").click(function() {
+		$(this).toggleClass("active");
+		$(this).siblings(".mobile-text-card__content").slideToggle(200)
+	});
+
 	//слайдер
 
 	$('.slider-catalog').slick({
@@ -188,6 +193,77 @@ $("*[data-video-id]").modalVideo();
 
 	});
 
+	$('.slider-for').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				dots: true,
+			}
+		}
+		]
+	});
+
+	$('.slider-nav').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		vertical: true,
+		verticalSwiping: true,
+		asNavFor: '.slider-for',
+		touchThreshold: 1000,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				vertical: false,
+				verticalSwiping: false,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 3,
+				vertical: false,
+				verticalSwiping: false,
+			}
+		}
+		]
+	});
+
+	$('.text-inline').each(function() {
+		var textLineCount = $(this)[0].getClientRects().length;
+		var lineClampValue = $(this).parent().css('-webkit-line-clamp');
+		if (textLineCount > lineClampValue) {
+			$(this).parent().addClass('cut');
+		}
+	});
+	$('.card-text-more a').click(function(event) {
+		event.preventDefault();
+
+		if ($(this).parent().siblings(".card-text").hasClass("active")) {
+			$(this).html("Читать полностью");
+			$(this).parent().siblings(".card-text").removeClass('active');
+		} else {
+			$(this).html("Свернуть");
+			$(this).parent().siblings(".card-text").addClass('active');
+		}
+	});
+
 	$('.tabs-etaps li a').click(function(event) {
 		event.preventDefault();
 		$(this).parent().parent().find("li").removeClass('active');
@@ -246,6 +322,38 @@ $("*[data-video-id]").modalVideo();
 	});
 
 	objectFitImages();
+
+		jQuery('.quantity').each(function() {
+		var spinner = jQuery(this),
+		input = spinner.find('input[type="number"]'),
+		btnUp = spinner.find('.quantity-up'),
+		btnDown = spinner.find('.quantity-down'),
+		min = input.attr('min'),
+		max = input.attr('max');
+
+		btnUp.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue >= max) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue + 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+		btnDown.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue <= min) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue - 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+	});
 
 
 });
