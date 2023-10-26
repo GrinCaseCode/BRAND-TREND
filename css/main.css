@@ -1164,7 +1164,7 @@ form {
 }
 .checkbox-main label > span {
 	position: relative;
-    padding: 0px 0 0 25px;
+	padding: 0px 0 0 25px;
 	display: block;
 	cursor: pointer;
 }
@@ -1176,7 +1176,7 @@ form {
 	width: 16px;
 	height: 16px;
 	background-image: url(../img/checkbox.svg);
-		background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	transition: .2s;
@@ -1209,25 +1209,25 @@ form {
 .sidebar-catalog__content {
 	max-height: calc(100vh - 220px);
 	overflow: auto;
-		scrollbar-width: thin;
+	scrollbar-width: thin;
 	scrollbar-color: #000 #ccc;
 }
 .sidebar-catalog__content::-webkit-scrollbar {
-  -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 .sidebar-catalog__content::-webkit-scrollbar:vertical {
-  width: 3px;
+	width: 3px;
 }
 .sidebar-catalog__content::-webkit-scrollbar:horizontal {
-  height: 3px;
+	height: 3px;
 }
 .sidebar-catalog__content::-webkit-scrollbar-thumb {
-  background-color: #000;
-  border-radius: 10px;
+	background-color: #000;
+	border-radius: 10px;
 }
 .sidebar-catalog__content::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: #ccc;
+	border-radius: 10px;
+	background-color: #ccc;
 }
 .item-sidebar__head {
 	padding: 20px 25px;
@@ -1285,8 +1285,8 @@ form {
 	color: #000;
 	width: 100%;
 	border: 1px solid #000;
-background: #FFF;
-font-family: 'Montserrat';
+	background: #FFF;
+	font-family: 'Montserrat';
 }
 .item-sidebar {
 	border-bottom: 1px solid #D9D9D9;
@@ -1306,15 +1306,15 @@ font-family: 'Montserrat';
 	flex-wrap: wrap;
 }
 .tag-catalog {
-font-size: 14px;
-padding: 8px 13px;
-margin-right: 7px;
-background: #FAFAFA;
-font-weight: 500;
-line-height: 140%;
-color: #000;
-display: inline-flex;
-align-items: center;
+	font-size: 14px;
+	padding: 8px 13px;
+	margin-right: 7px;
+	background: #FAFAFA;
+	font-weight: 500;
+	line-height: 140%;
+	color: #000;
+	display: inline-flex;
+	align-items: center;
 }
 .remove-tag {
 	font-size: 16px;
@@ -1340,9 +1340,9 @@ align-items: center;
 	border-bottom: 1px dashed transparent;
 }
 .item-sorting span {
-		border-bottom: 1px dashed transparent;
-		cursor: pointer;
-		transition: all 0.3s;
+	border-bottom: 1px dashed transparent;
+	cursor: pointer;
+	transition: all 0.3s;
 }
 .item-sorting input:checked + span,
 .item-sorting.active span,
@@ -1369,7 +1369,7 @@ align-items: center;
 	position: relative;
 }
 .page-numbers {
-		width: 29px;
+	width: 29px;
 	height: 29px;
 	font-size: 14px;
 	margin: 0 13px;
@@ -1390,8 +1390,8 @@ align-items: center;
 }
 .page-numbers.current,
 .page-numbers:hover {
-background: #E1C7A5;
-font-weight: 600;
+	background: #E1C7A5;
+	font-weight: 600;
 }
 .prev.page-numbers {
 	left: 0;
@@ -1481,8 +1481,8 @@ font-weight: 600;
 	padding-bottom: 14px;
 }
 .page-card .price-main {
-font-size: 24px;
-margin-bottom: 16px;
+	font-size: 24px;
+	margin-bottom: 16px;
 }
 .page-card {
 	font-size: 14px;
@@ -1494,13 +1494,13 @@ margin-bottom: 16px;
 	display: flex;
 	align-items: center;
 	border: 1px solid #807F7F;
-background: #FFF;
+	background: #FFF;
 	font-weight: 300;
 	cursor: pointer;
 }
 .item-select {
 	font-size: 14px;
-		line-height: 140%;
+	line-height: 140%;
 }
 .item-select .jqselect {
 	width: 100%;
@@ -1548,7 +1548,7 @@ background: #FFF;
 	padding-bottom: 29px;
 	margin-bottom: 16px;
 	border-top: 1px solid #D9D9D9;
-border-bottom: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
 }
 .card-options__title {
 	margin-bottom: 10px;
@@ -1566,9 +1566,9 @@ border-bottom: 1px solid #D9D9D9;
 }
 .item-color {
 	width: 38px;
-height: 38px;
-border: 1px solid #807F7F;
-display: block;
+	height: 38px;
+	border: 1px solid #807F7F;
+	display: block;
 }
 .card-options .item-select {
 	margin-bottom: 30px;
@@ -1624,11 +1624,11 @@ display: block;
 	margin-bottom: 0;
 }
 .card-info__descr {
-font-size: 12px;
-margin-top: 20px;
-font-weight: 300;
-font-style: italic;
-line-height: 140%; 
+	font-size: 12px;
+	margin-top: 20px;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 140%; 
 }
 .card-text {
 	line-height: normal;
@@ -1653,8 +1653,8 @@ line-height: 140%;
 	font-size: 14px;
 	line-height: 140%;
 	border-bottom: 1px dashed #000;
-font-weight: 300;
-color: #000;
+	font-weight: 300;
+	color: #000;
 }
 .link-main:hover {
 	border-color: transparent;
@@ -1687,26 +1687,26 @@ color: #000;
 	padding-bottom: 63px;
 }
 .slick-dots {
-  bottom: 0;
-  left: 0;
-  width: 100%;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 }
 .slick-dots li {
-  width: 9px;
-  height: 9px;
+	width: 9px;
+	height: 9px;
 }
 .slick-dots li button {
-  width: 9px;
-  height: 9px;
-  background-color: #807F7F;
-  border-radius: 50%;
-  padding: 0;
-  border: none;
-  transition: all 0.3s;
+	width: 9px;
+	height: 9px;
+	background-color: #807F7F;
+	border-radius: 50%;
+	padding: 0;
+	border: none;
+	transition: all 0.3s;
 }
 .slick-dots li button:hover,
 .slick-dots li.slick-active button {
-background-color: #000;
+	background-color: #000;
 }
 .slick-dots li button::before {
 	display: none;
@@ -1723,7 +1723,7 @@ background-color: #000;
 	background-color: transparent;
 	font-size: 27px;
 	color: #000;
-font-family: 'Montserrat';
+	font-family: 'Montserrat';
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1737,7 +1737,7 @@ font-family: 'Montserrat';
 	font-weight: 500;
 	color: #000;
 	border: none;
-font-family: 'Montserrat';
+	font-family: 'Montserrat';
 	text-align: center;
 	background-color: transparent;
 }
@@ -1787,9 +1787,9 @@ input[type=number]
 .item-basket__title {
 	font-size: 24px;
 	margin-bottom: 6px;
-font-weight: 400;
-line-height: 140%;
-text-transform: uppercase;
+	font-weight: 400;
+	line-height: 140%;
+	text-transform: uppercase;
 	font-family: 'Oswald';
 	display: block;
 	color: #000;
@@ -1802,10 +1802,10 @@ text-transform: uppercase;
 	align-items: center;
 }
 .features-basket span {
-margin-right: 43px;
+	margin-right: 43px;
 }
 .features-basket span:last-child {
-margin-right: 0;
+	margin-right: 0;
 }
 .item-basket .btn-like {
 	font-size: 21px;
@@ -1840,7 +1840,7 @@ margin-right: 0;
 	top: 120px;
 	position: sticky;
 	background: #FAFAFA;
-		font-weight: 500;
+	font-weight: 500;
 }
 .sidebar-basket__line {
 	padding-bottom: 10px;
