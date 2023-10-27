@@ -260,7 +260,6 @@ $("*[data-video-id]").modalVideo();
 			settings: {
 				slidesToShow: 1,
 				arrows: false,
-				dots: true,
 				variableWidth: true,
 			}
 		}
