@@ -138,98 +138,107 @@
 			<div class="navigation-overlay"></div>
 		</header>
 
-		<section class="page-basket">
+		<section class="page-order">
 			<div class="container">
-				<h1 class="title-section">Корзина</h1>
+				<h1 class="title-section">Оформление заказа</h1>
 				<div class="row">
-					<div class="col-lg-8">
-						<div class="item-basket">
-							<a href="#" class="item-basket__image">
-								<img src="img/basket1.jpg" alt="alt">
-							</a>
-							<div class="item-basket__content">
-								<a href="#" class="item-basket__title">gucci</a>
-								<div class="item-basket__descr">Кожаные ботильоны Gucci Zumi, Черный</div>
-								<div class="features-basket">
-									<span>Размер: 38</span>
-									<span>Цвет: черный</span>
-								</div>
+					<div class="col-xl-3 col-lg-4 page-order__left">
+						<form>
+							<div class="title-block">Контактные данные</div>
+							<div class="input-form">
+								<input type="text" placeholder="Имя" required="required">
 							</div>
-							<div class="quantity">
-								<div class="quantity-button quantity-down">–</div>
-								<input type="number" min="1" step="1" value="1">
-								<div class="quantity-button quantity-up">+</div>
+							<div class="input-form">
+								<input type="text" placeholder="Телефон" class="input-phone" required="required">
 							</div>
-							<div class="price-main">158 400 ₽</div>
-							<div class="buttons-basket">
-								<a href="#" class="btn-like"><i class="far fa-heart"></i></a>
-								<a href="#" class="btn-remove"><i class="far fa-trash"></i></a>
+							<div class="input-form">
+								<input type="email" placeholder="E-mail" required="required">
 							</div>
-						</div>
-						<div class="item-basket">
-							<a href="#" class="item-basket__image">
-								<img src="img/basket2.jpg" alt="alt">
-							</a>
-							<div class="item-basket__content">
-								<a href="#" class="item-basket__title">MSGM</a>
-								<div class="item-basket__descr">Сумка</div>
-								<div class="features-basket">
-									<span>Размер: М</span>
-									<span>Цвет: черный</span>
-								</div>
+							<div class="title-block">Доставка</div>
+							<div class="item-select">
+								<select>
+									<option value="1">Город</option>
+									<option value="1">Город</option>
+									<option value="1">Город</option>
+									<option value="1">Город</option>
+								</select>
 							</div>
-							<div class="quantity">
-								<div class="quantity-button quantity-down">–</div>
-								<input type="number" min="1" step="1" value="1">
-								<div class="quantity-button quantity-up">+</div>
+							<div class="checkbox-main">
+								<label>
+									<input type="radio" checked="checked" name="radio-delivery" />
+									<span>Курьером</span>
+								</label>
 							</div>
-							<div class="price-main">35 800 ₽</div>
-							<div class="buttons-basket">
-								<a href="#" class="btn-like"><i class="far fa-heart"></i></a>
-								<a href="#" class="btn-remove"><i class="far fa-trash"></i></a>
+							<div class="checkbox-main">
+								<label>
+									<input type="radio" name="radio-delivery" />
+									<span>Любой транспортной компанией России</span>
+								</label>
 							</div>
-						</div>
-						<div class="basket-info">
-							<div class="title-block">За каждую покупку мы дарим вам подарочный комплект:</div>
-							<ul class="list-page">
-								<li>Фирменная упаковка</li>
-								<li>Подарочная открытка от нас</li>
-								<li>Шоппер</li>
-							</ul>
-							<div class="title-block">При покупке вы получаете:</div>
-							<ul class="list-icons">
-								<li><img src="img/ic_card1.svg" alt="alt">Товар в оригинальной упаковке вместе с сопровождающими документами</li>
-								<li><img src="img/ic_card2.svg" alt="alt">Бесплатную консультацию стилиста: полную проработку образа под выбранные вещи</li>
-								<li><img src="img/ic_card3.svg" alt="alt">Видео/фото отчет о выкупе товара из бутика</li>
-							</ul>
-						</div>
+							<div class="title-block">Способ оплаты</div>
+							<div class="checkbox-main">
+								<label>
+									<input type="radio" checked="checked" name="radio-payment" />
+									<span>Наличными</span>
+								</label>
+							</div>
+							<div class="checkbox-main">
+								<label>
+									<input type="radio" name="radio-payment" />
+									<span>Банковской картой</span>
+								</label>
+							</div>
+							<div class="checkbox-main">
+								<label>
+									<input type="radio" name="radio-payment" />
+									<span>по QR-коду</span>
+								</label>
+							</div>
+							<button class="btn-main">ПОдтвердить заказ</button>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" checked="checkbox" />
+									<span>Согласие на обработку персональных данных</span>
+								</label>
+							</div>
+						</form>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-xl-5 col-lg-6 offset-xl-2 offset-lg-1">
 						<div class="sidebar-basket">
-							<div class="title-block">В корзине</div>
+							<div class="item-order">
+								<a href="#" class="item-order__image">
+									<img src="img/item_order1.jpg" alt="alt">
+								</a>
+								<div class="item-order__content">
+									<a href="#" class="item-order__title">gucci</a>
+									<div class="item-order__descr">Кожаные ботильоны Gucci Zumi</div>
+								</div>
+								<div class="price-main">158 400 ₽</div>
+							</div>
+							<div class="item-order">
+								<a href="#" class="item-order__image">
+									<img src="img/item_order2.jpg" alt="alt">
+								</a>
+								<div class="item-order__content">
+									<a href="#" class="item-order__title">MSGM</a>
+									<div class="item-order__descr">Сумка</div>
+								</div>
+								<div class="price-main">35 800 ₽</div>
+							</div>
 							<div class="sidebar-basket_wrap">
 								<div class="sidebar-basket__line">
-									<span>2 вещи</span>
+									<span>Сумма по товару</span>
 									<strong>194 200 ₽</strong>
 								</div>
 								<div class="sidebar-basket__line">
-									<span>Премиальная подарочная упаковка</span>
-									<strong>Бесплатно</strong>
-								</div>
-								<div class="sidebar-basket__line">
-									<span>Подарочное сообщение</span>
-									<strong>Бесплатно</strong>
-								</div>
-								<div class="sidebar-basket__line">
-									<span>Сумка для покупок</span>
-									<strong>Бесплатно</strong>
+									<span>Стоимость доставки</span>
+									<strong>2 000 ₽</strong>
 								</div>
 								<div class="sidebar-basket__line">
 									<span>Итого:</span>
 									<div class="price-main">194 200 ₽</div>
 								</div>
 							</div>
-							<a href="#" class="btn-main">оформить заказ</a>
 						</div>
 					</div>
 				</div>
