@@ -245,6 +245,28 @@ $("*[data-video-id]").modalVideo();
 		]
 	});
 
+	$('.slider-sertificats').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		touchThreshold: 1000,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-long-arrow-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-long-arrow-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 1,
+				arrows: false,
+				dots: true,
+				variableWidth: true,
+			}
+		}
+		]
+	});
+
 	$('.text-inline').each(function() {
 		var textLineCount = $(this)[0].getClientRects().length;
 		var lineClampValue = $(this).parent().css('-webkit-line-clamp');
