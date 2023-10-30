@@ -597,6 +597,8 @@
 .information-block {
     padding-bottom: 45px;
 }
+.page-contacts .title-section,
+.page-gift .title-section,
 .page-payment .title-section,
 .page-delivery .title-section, 
 .page-about .title-section {
@@ -670,6 +672,66 @@
     height: 33px;
     margin-bottom: 13px;
     }
+    .steps-block {
+    padding: 35px 40px;
+    padding-right: 30px;
+    padding-bottom: 33px;
+    margin-bottom: 35px;
+}
+.gift-block {
+    padding: 40px 45px;
+    padding-bottom: 50px;
+    }
+    .gift-block__title {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+.gift-block__descr {
+    font-size: 26px;
+    margin-bottom: 18px;
+    max-width: 509px;
+    }
+    .gift-block__text {
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.qr-code__image img {
+    max-width: 130px;
+    }
+    .qr-code__image {
+    margin-right: 28px;
+}
+.qr-code__text {
+    font-size: 15px;
+    max-width: 220px;
+    }
+.step-unit__number {
+    font-size: 32px;
+    margin-bottom: 9px;
+}
+.contacts-block__left {
+    padding-left: 40px;
+}
+.contacts-block .title-block:not(:first-of-type) {
+    margin-top: 33px;
+}
+.contacts-block .list-socials img {
+    max-width: initial;
+    transform: scale(0.8);
+}
+.contacts-block .list-socials li {
+    margin-right: 17px;
+}
+.contacts-block .qr-code__image img {
+    max-width: 108px;
+}
+.contacts-block .qr-code__text {
+    font-size: 14px;
+    max-width: 145px;
+    }
+    #map {
+    height: 480px;
+}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -965,6 +1027,48 @@
     .guarantee-block {
     padding: 26px 25px;
     margin-top: 29px;
+}
+    .title-section {
+        font-size: 30px;
+    }
+    .steps-block .title-block {
+        margin-bottom: 13px;
+    }
+    .steps-block {
+    padding: 25px 20px;
+    padding-right: 15px;
+    padding-bottom: 28px;
+    margin-bottom: 30px;
+}
+.gift-block {
+    padding: 30px 30px;
+    padding-bottom: 45px;
+}
+.gift-block__title {
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+.gift-block__descr {
+    font-size: 20px;
+    margin-bottom: 14px;
+    max-width: 395px;
+}
+.gift-block__text {
+    font-size: 13px;
+    margin-bottom: 32px;
+}
+.qr-code__image img {
+    max-width: 110px;
+}
+.qr-code__image {
+    margin-right: 20px;
+}
+.qr-code__text {
+    font-size: 13px;
+    max-width: 196px;
+}
+.page-gift {
+    padding-bottom: 45px;
 }
 }
 
@@ -1792,6 +1896,8 @@
 .image-about {
     margin-right: 0;
 }
+.page-contacts .title-section,
+.page-gift .title-section,
 .page-payment .title-section,
 .page-delivery .title-section {
     margin-top: 0;
@@ -1826,6 +1932,27 @@
 }
 .item-guarantee {
     margin-bottom: 20px;
+}
+.step-unit {
+    margin-bottom: 15px;
+}
+.steps-block {
+    padding: 25px;
+}
+.gift-block {
+    background-position: left center;
+}
+.contacts-block .contacts-block__left {
+    padding: 25px;
+}
+.contacts-block .title-block:not(:first-of-type) {
+    margin-top: 20px;
+}
+#map {
+    height: 400px;
+}
+.page-contacts {
+    padding-bottom: 40px;
 }
 }
 
@@ -1948,6 +2075,16 @@
     .item-guarantee .title-block {
         margin-bottom: 12px;
     }
+    .step-unit {
+        font-size: 13px;
+        padding-right: 5px;
+    }
+    .steps-block {
+        padding: 20px;
+    }
+    .gift-block__title span {
+        white-space: nowrap;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -1998,6 +2135,28 @@
     .step-delivery__number::after {
         display: none;
     }
+    .steps-block {
+        padding: 20px 15px;
+        padding-bottom: 10px;
+    }
+    .gift-block {
+    padding: 24px 20px;
+    padding-bottom: 35px;
+}
+.qr-code__image img {
+    max-width: 100px;
+}
+.gift-block__text {
+    margin-bottom: 25px;
+}
+.qr-code__text {
+    max-width: 160px;
+}
+.step-unit {
+    font-size: 12px;
+    line-height: 140%;
+    padding-right: 2px;
+}
 }
 
 /* Custom, iPhone Retina */

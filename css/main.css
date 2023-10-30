@@ -2010,6 +2010,8 @@ input[type=number]
 .page-order .sidebar-basket {
 	padding-bottom: 15px;
 }
+.page-contacts .title-section,
+.page-gift .title-section,
 .page-payment .title-section,
 .page-delivery .title-section,
 .page-about .title-section {
@@ -2331,4 +2333,120 @@ input[type=number]
 }
 .item-guarantee .title-block {
 	margin-bottom: 27px;
+}
+.steps-block {
+	padding: 38px 86px;
+	padding-right: 55px;
+	padding-bottom: 45px;
+	margin-bottom: 47px;
+	background: #FAF7F3;
+}
+.step-unit__number {
+font-size: 36px;
+margin-bottom: 11px;
+font-family: 'Oswald';
+	color: #E1C7A5;
+font-weight: 500;
+line-height: 160%; 
+}
+.steps-block .title-block {
+	margin-bottom: 18px;
+}
+.gift-block {
+	padding: 58px 60px;
+	color: #fff;
+	background-image: url(../img/bg_gift_sertificats.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.gift-block__title {
+font-size: 44px;
+margin-bottom: 7px;
+font-family: 'Oswald';
+font-weight: 400;
+line-height: 160%;
+}
+.gift-block__descr span,
+.gift-block__title span {
+color: #E1C7A5;
+}
+.gift-block__descr {
+	font-size: 32px;
+margin-bottom: 22px;
+max-width: 580px;
+font-family: 'Oswald';
+font-weight: 400;
+line-height: 160%;
+}
+.gift-block__text {
+	font-size: 18px;
+	margin-bottom: 55px;
+font-style: italic;
+line-height: 140%;
+}
+.qr-code {
+	display: flex;
+	align-items: center;
+}
+.qr-code__image img {
+	max-width: 156px;
+	height: auto;
+	display: block;
+}
+.qr-code__image {
+	margin-right: 40px;
+}
+.qr-code__text {
+font-size: 18px;
+max-width: 275px;
+font-style: italic;
+font-weight: 400;
+line-height: 140%;
+}
+.page-contacts,
+.page-gift {
+	padding-bottom: 60px;
+}
+.contacts-block {
+	background: #FAF7F3;
+}
+#map {
+	height: 553px;
+	width: 100%;
+	background-color: #ddd;
+}
+.contacts-block__left {
+	padding-left: 60px;
+}
+.contacts-block .title-block {
+	margin-bottom: 4px;
+	line-height: 140%;
+	font-weight: 600;
+}
+.contacts-block .title-block:not(:first-of-type) {
+	margin-top: 43px;
+}
+.contacts-block .qr-code__image img {
+	max-width: 126px;
+}
+.contacts-block .qr-code__image {
+	margin-right: 16px;
+}
+.contacts-block .qr-code__text {
+	font-size: 16px;
+	max-width: 149px;
+	line-height: 140%;
+}
+.contacts-block .qr-code {
+	margin-top: 14px;
+}
+.contacts-block .list-socials img {
+  filter: brightness(0%);
+}
+.contacts-block .list-socials li {
+	margin-right: 24px;
+}
+.contacts-block p a {
+	color: #000;
 }
