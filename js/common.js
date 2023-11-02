@@ -1,5 +1,26 @@
 $(document).ready(function() {
 
+	$(".btn-header_search").click(function(e) {
+		e.preventDefault();
+		if ($(".form-search").is(":hidden")) {
+			$(".form-search").fadeIn(200);
+			$(".btn-header_search").addClass("active");
+			$(".form-search").addClass("active");
+		} else {
+			$(".form-search").fadeOut(200);
+			$(".btn-header_search").removeClass("active");
+			$(".form-search").removeClass("active");
+		}
+	});
+
+	 $(document).mouseup(function (e) {
+    var container = $(".search-wrap");
+    if (container.has(e.target).length === 0){
+      $(".form-search").fadeOut(200);
+			$(".btn-header_search").removeClass("active");    
+			$(".form-search").removeClass("active");
+		}
+  });
 
 //прилипающие меню
 var $menu = $(".header");
